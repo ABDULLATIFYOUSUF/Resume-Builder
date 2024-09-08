@@ -4,14 +4,16 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .mainDiv {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    width: 80%;
+    width: 100%;
+    height: fit-content;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 10px auto;
 }
+
 .fDiv {
     width: 30%;
     margin: 10px;
@@ -22,24 +24,16 @@
     border-radius: 5px;
     padding: 30px;
 }
+
 .img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin: 20px;
+    margin-top: 20px;
     box-shadow: rgb(3, 245, 245) 0px 3px 8px;
-}
-.links{
-    border-bottom:2px solid rgb(223, 216, 216);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-.fa-brands{
-    font-size: 30px;
-    color: rgb(223, 216, 216);
-    cursor: pointer;
-    margin: 5px;
-}
 .skills {
     display: flex;
     flex-direction: row;
@@ -48,7 +42,8 @@
     gap: 10px;
     color: rgb(223, 216, 216);
 }
-.paraSillsDiv {
+
+.paraSkillsDiv {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -56,13 +51,15 @@
     align-items: flex-start;
     gap: 2px;
 }
+
 .paraSkills {
     width: 100%;
     padding: 8px;
-    background-color: rgb(192, 224, 235);
+    background-color: rgb(235, 242, 245);
     border-radius: 5px;
     font-weight: bold;
 }
+
 .eduDiv {
     margin-top: 20px;
     display: flex;
@@ -73,6 +70,7 @@
     color: rgb(223, 216, 216);
     font-size: larger;
 }
+
 .eduDetail {
     margin-top: 10px;
     display: flex;
@@ -81,11 +79,12 @@
     align-items: flex-start;
     gap: 5px;
 }
+
 .eduPara {
     color: rgb(223, 216, 216);
 }
 
-.lanDiv{
+.lanDiv {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -95,6 +94,7 @@
     color: rgb(223, 216, 216);
     font-size: larger;
 }
+
 .lanDetail {
     margin-top: 10px;
     display: flex;
@@ -103,6 +103,7 @@
     align-items: flex-start;
     gap: 5px;
 }
+
 .lanPara {
     color: rgb(223, 216, 216);
 }
@@ -117,31 +118,338 @@
     border-radius: 5px;
     padding: 30px;
 }
-.nameHeading{
+
+.nameHeading {
     color: rgb(87, 76, 76);
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
 }
-.desheading{
+
+.desheading {
     color: rgb(37, 37, 165);
     font-size: 1.5em;
 }
-.objPara{
+
+.objPara {
     color: rgb(87, 76, 76);
     text-align: justify;
     margin-top: 10px;
 }
-.address{
+
+.address {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     background-color: rgb(90, 90, 165);
-    padding: 15px 50px;
+    padding: 10px;
     margin: 20px 0px;
     border-radius: 5px;
     color: rgb(223, 216, 216);
+    gap: 20px;
 }
-.addpara{
+
+.addparamain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addpara {
     display: flex;
     gap: 10px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    color: rgb(223, 216, 216);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.we {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgb(87, 76, 76);
+    margin-bottom: 20px;
+}
+
+.we i {
+    font-size: large;
+}
+
+.des-we {
+    color: rgb(87, 76, 76);
+}
+
+.des-org {
+    color: rgb(87, 76, 76);
+}
+
+.des-dur {
+    color: rgb(90, 90, 165);
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.we-jd {
+    color: rgb(90, 90, 165);
+    margin-top: 10px;
+}
+
+.we-jdp {
+    text-align: justify;
+    margin-top: 5px;
+    color: rgb(87, 76, 76);
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    color: rgb(87, 76, 76);
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.courses i {
+    font-size: large;
+
+}
+
+.course-para {
+    color: rgb(87, 76, 76);
+}
+
+.gBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gBtn button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form{
+    display: none;
+    width: 100%;
+    border: 2px solid rgb(90, 90, 165);
+    height: fit-content;
+    padding: 20px;
+}
+.formFirst{
+    width: 50%;
+    border: 1px solid black;
+}
+.propic{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.propic label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.propic input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid rgb(87, 76, 76);
+}
+.formSkills{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.formSkills label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.formSkills input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.formSkills button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formEdu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.formEdu label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.formEdu input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.formEdu button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.formLan{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.formLan label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.formLan input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.formLan button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formSecond{
+    width: 50%;
+    border: 1px solid black;
+
+}
+.ndo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.ndo label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.ndo input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.ndo textarea{
+    border-radius: 5px;
+    width: 80%;
+    height: 10em;
+    padding: 10px;
+}
+
+.perInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.perInfo label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.perInfo input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.form-we{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.form-we label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.form-we input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.form-we button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.form-course{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.form-course label{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.form-course input{
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+.form-course button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.SubBtn{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.SubBtn button{
+    background-color: rgb(90, 90, 165);
+    color: rgb(235, 242, 245);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
