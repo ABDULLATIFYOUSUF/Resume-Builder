@@ -1,8 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .mainDiv{
 display: flex;
 justify-content: center;
 gap: 10px;
-width: 100%;
+width: 80%;
 height: 100vh;
 }
 .fDiv{
@@ -20,18 +26,53 @@ background-color: rgb(90, 90, 165);
     margin: 20px;
     box-shadow: rgb(3, 245, 245) 0px 3px 8px;
 }
-
-.iconSkills {
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     color: white;
-    margin: 10px;
-    width: 80px;
-    height: 80px;
+    font-size: larger;
+}
+.paraSillsDiv{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    gap: 2px;
+}
+.paraSkills{
+    border: 1px solid lightblue;
+    width: 60%;
+    padding: 8px;
+    background-color: lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.eduDiv{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: larger;
+}
+.eduDetail{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    gap: 5px;
 
 }
-.spanSkill{
-    margin: 10px;
+.eduPara{
+    color: white;
 }
-
 
 
 
