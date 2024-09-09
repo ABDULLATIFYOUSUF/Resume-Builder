@@ -15,7 +15,7 @@
       <!-- first div -->
       <div class="fDiv">
         <!--Resume Image -->
-        <img class="img" src="./images/latif (2).jpg" />
+        <img id="img" class="img" src="./images/latif (2).jpg" />
 
         <!-- Skills -->
         <div class="skills">
@@ -23,10 +23,10 @@
           <h2>Skills</h2>
         </div>
         <div class="paraSkillsDiv">
-          <p class="paraSkills">HTML</p>
-          <p class="paraSkills">CSS</p>
-          <p class="paraSkills">JavaScript</p>
-          <p class="paraSkills">Node.js</p>
+          <p id="paraSkills" class="paraSkills">HTML</p>
+          <p id="paraSkills" class="paraSkills">CSS</p>
+          <p id="paraSkills" class="paraSkills">TypeScript</p>
+          <p id="paraSkills" class="paraSkills">javaScript</p>
         </div>
 
         <!-- Education -->
@@ -35,11 +35,14 @@
           <h2>Education</h2>
         </div>
         <div class="eduDetail">
-          <p class="eduPara">
+          <p id="eduPara" class="eduPara">
             B.Com (Continue) from Allama Iqbal Open University
           </p>
-          <p class="eduPara">
-            B.Com (Continue) from Allama Iqbal Open University
+          <p id="eduPara" class="eduPara">
+            Intermediate from Intermediate Board of Karachi.
+          </p>
+          <p id="eduPara" class="eduPara">
+          Matriculation from Matriculation Board of Karachi.
           </p>
         </div>
 
@@ -49,7 +52,7 @@
           <h2>Languages</h2>
         </div>
         <div class="lanDetail">
-          <p class="lanPara">English</p>
+          <p id="lanPara" class="lanPara">English</p>
           <p class="lanPara">Urdu</p>
         </div>
       </div>
@@ -57,9 +60,9 @@
       <!-- Second Div -->
       <div class="sDiv">
         <!-- first portion name, designation, objective -->
-        <h1 class="nameHeading">Abdul Latif</h1>
-        <h3 class="desheading">front-end developer</h3>
-        <p class="objPara">
+        <h1 id="nameHeading" class="nameHeading">Abdul Latif</h1>
+        <h3 id="desHeading" class="desheading">front-end developer</h3>
+        <p id="objPara" class="objPara">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
           consectetur necessitatibus laborum quidem repellat qui eos rerum
           molestiae dolor? Fugiat facilis deleniti voluptatibus, praesentium
@@ -74,23 +77,23 @@
           <div class="addparamain">
             <div class="addpara">
               <i class="fa-solid fa-envelope"></i>
-              <p>latifyousuf513@gmail.com</p>
+              <p id="email">latifyousuf513@gmail.com</p>
             </div>
             <div class="addpara">
               <i class="fa-solid fa-phone"></i>
-              <p>+923002288944</p>
+              <p id="cNumber">+923002288944</p>
             </div>
           </div>
           <div class="addparamain">
             <div class="addpara">
               <i class="fa-solid fa-location-dot"></i>
-              <p>Karachi, Sindh, Pakistan.</p>
+              <p id="address">Karachi, Sindh, Pakistan.</p>
             </div>
             <div class="addpara">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a id="facebook" target="_blank" href="https://www.facebook.com/latif.memon.50"><i class="fa-brands fa-facebook"></i></a>
+              <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/abdul-latif-531428263/"><i class="fa-brands fa-linkedin"></i></a>
+              <a id="gHub" target="_blank" href="https://github.com/ABDULLATIFYOUSUF"><i class="fa-brands fa-github"></i></a>
+              <a id="iGram" target="_blank" href="https://www.instagram.com/latifyousuf/"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -98,16 +101,16 @@
         <div>
           <div class="we">
             <i class="fa-solid fa-briefcase"></i>
-            <h2>WORK EXPERIENCE</h2>
+            <h2 id="weHead">WORK EXPERIENCE</h2>
           </div>
-          <h3 class="des-we">Junior Clerk</h3>
-          <h4 class="des-org">Karachi Development Authority</h4>
+          <h3 id="des-we" class="des-we">Junior Clerk</h3>
+          <h4 id="des-org" class="des-org">Karachi Development Authority</h4>
           <div class="des-dur">
-            <h5>03/01/2012 to Present</h5>
-            <h5>Karachi, Pakistan</h5>
+            <h5 id="durHead">03/01/2012 to Present</h5>
+            <h5 id="jobAdd">Karachi, Pakistan</h5>
           </div>
-          <h5 class="we-jd">Job Description:</h5>
-          <p class="we-jdp">
+          <h5 id="we-jd" class="we-jd">Job Description:</h5>
+          <p id="we-jdp" class="we-jdp">
             As a Junior Clerk in a government organization, I was responsible
             for performing various clerical tasks including data entry, managing
             office records, and handling routine correspondence. My duties also
@@ -122,10 +125,10 @@
         <div>
           <div class="courses">
             <i class="fa-sharp fa-solid fa-certificate"></i>
-            <h2>COURSES</h2>
+            <h2 id="courseHead">COURSES</h2>
           </div>
           <div>
-            <p class="course-para">
+            <p id="coursePara" class="course-para">
               Currently pursuing a Generative AI course from GIAIC.
             </p>
             <p class="course-para">
@@ -154,19 +157,19 @@
             <div class="formSkills">
                 <h3>Education Information:</h3>
                 <label for="">Skills:</label>
-                <input type="text" placeholder="Enter Your Skill.....">
+                <input id="formSkill" type="text" placeholder="Enter Your Skill.....">
                 <button>Add</button>
             </div>
 
             <div class="formEdu">
                 <label for="">Education:</label>
-                <input type="text" placeholder="Enter Your Education.....">
+                <input id="formEdu" type="text" placeholder="Enter Your Education.....">
                 <button>Add</button>
             </div>
 
             <div class="formLan">
                 <label for="">Languages:</label>
-                <input type="text" placeholder="Enter languages.....">
+                <input id="lanInput" type="text" placeholder="Enter languages.....">
                 <button>Add</button>
             </div>
 </div>
@@ -176,53 +179,57 @@
     <div class="ndo">
         <h3>Personal Information</h3>
         <label for="">Name:</label>
-        <input type="text" placeholder="Enter Your Name...">
+        <input id="nameInput" type="text" placeholder="Enter Your Name...">
         <label for="">Designation:</label>
-        <input type="text" placeholder="Enter Your Designation...">
+        <input id="ndoDesInput" type="text" placeholder="Enter Your Designation...">
         <label for="">Objective:</label>
-        <textarea name="" id="" placeholder="Enter Objective...."></textarea>
+        <textarea name="" id="formObj" placeholder="Enter Objective...."></textarea>
 </div>
 
 <div class="perInfo">
     <h3>Contact Information:</h3>
     <label for="">Email:</label>
-    <input type="email" placeholder="Enter Your Email....">
+    <input id="formEmail" type="email" placeholder="Enter Your Email....">
     <label for="">Contact Number:</label>
-    <input type="text" placeholder="Enter Your Contact Number...">
+    <input id="formNumber" type="text" placeholder="Enter Your Contact Number...">
     <label for="">Address:</label>
-    <input type="text" placeholder="Enter Your Address...">
+    <input id="addInput" type="text" placeholder="Enter Your Address...">
     <label for="">Social Media Links</label>
-    <input type="text" placeholder="Enter Your Facebook Link....">
-    <input type="text" placeholder="Enter Your Linkedin Link....">
-    <input type="text" placeholder="Enter Your github Link....">
-    <input type="text" placeholder="Enter Your instagram Link....">
+    <input id="fbInput" type="text" placeholder="Enter Your Facebook Link....">
+    <input id="ldInput" type="text" placeholder="Enter Your Linkedin Link....">
+    <input id="ghInput" type="text" placeholder="Enter Your github Link....">
+    <input id="instaInput" type="text" placeholder="Enter Your instagram Link....">
 </div>
 
 <div class="form-we">
     <h3>Work Experience:</h3>
     <label for="">Designation:</label>
-    <input type="text" placeholder="Enter Description....">
+    <input id="desInput" type="text" placeholder="Enter Designation....">
     <label for="">organization Name:</label>
-    <input type="text" placeholder="Enter organization Name....">
+    <input id="orgInput" type="text" placeholder="Enter organization Name....">
     <label for="">Duration of Job:</label>
-    <input type="text" placeholder="03/12/2024 to present....">
+    <input id="durInput" type="text" placeholder="03/12/2024 to present....">
+    <label for="">Organization Address:</label>
+    <input id="orgAddInput" type="text" placeholder="Enter Address of Organization....">
     <label for="">Job Description:</label>
-    <input type="text" placeholder="Enter Your Job Description.....">
+    <input id="jdInput" type="text" placeholder="Enter Your Job Description.....">
     <button>Add</button>
 </div>
 
 <div class="form-course">
     <label for="">Courses</label>
-    <input type="text" placeholder="Enter your course detail....">
+    <input id="courseInput" type="text" placeholder="Enter your course detail....">
     <button>Add</button>
 </div>
 </div>
     </div>
     <div class="SubBtn" id="subBtn">
-        <button>Submit</button>
+        <button id="submitBtn">Submit</button>
     </div>
 
-    <!-- <button id="generatePDF">Print</button> -->
+<div class="generatePDF">
+  <button id="generatePDF">Download PDF</button>
+</div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
   <script src="app.js"></script>
