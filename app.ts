@@ -1,61 +1,5 @@
-
-
-const mainDiv = document.getElementById("mainDiv") as HTMLElement
-const generateResume = document.getElementById("generateResume") as HTMLElement
-const form = document.getElementById("form") as HTMLElement
-const subBtn = document.getElementById("subBtn") as HTMLElement
-const generatePDF = document.getElementById("generatePDF") as HTMLElement
-
-
-    generateResume?.addEventListener("click", () => {
-        mainDiv.style.display = "none";
-        generateResume.style.display = "none"
-        form.style.display = "flex"
-        subBtn.style.display = "flex"
-    })
-    let formSkill = document.getElementById("formSkill") as HTMLInputElement
-    let paraSkills = document.getElementById("paraSkills") as HTMLElement
-    let formEdu = document.getElementById("formEdu") as HTMLInputElement
-    let eduPara = document.getElementById("eduPara") as HTMLElement
-    let lanInput = document.getElementById("lanInput") as HTMLInputElement
-    let lanPara = document.getElementById("lanPara") as HTMLElement
-    let nameHeading = document.getElementById("nameHeading") as HTMLElement
-    let nameInput = document.getElementById("nameInput") as HTMLInputElement
-    let desHeading = document.getElementById("desHeading") as HTMLElement
-    let ndoDesInput = document.getElementById("ndoDesInput") as HTMLInputElement
-    let formObj = document.getElementById("formObj") as HTMLInputElement
-    let objPara = document.getElementById("objPara") as HTMLElement
-    let email = document.getElementById("email") as HTMLElement
-    let formEmail = document.getElementById("formEmail") as HTMLInputElement
-    let cNumber = document.getElementById("cNumber") as HTMLElement
-    let formNumber = document.getElementById("formNumber") as HTMLInputElement
-    let address = document.getElementById("address") as HTMLElement
-    let addInput = document.getElementById("addInput") as HTMLInputElement
-    let facebook = document.getElementById("facebook") as HTMLAnchorElement
-    let fbInput = document.getElementById("fbInput") as HTMLInputElement
-    let linkedin = document.getElementById("linkedin") as HTMLAnchorElement
-    let ldInput = document.getElementById("ldInput") as HTMLInputElement
-    let gHub = document.getElementById("gHub") as HTMLAnchorElement
-    let ghInput = document.getElementById("ghInput") as HTMLInputElement
-    let iGram = document.getElementById("iGram") as HTMLAnchorElement
-    let instaInput = document.getElementById("instaInput") as HTMLInputElement
-    let desWe = document.getElementById("des-we") as HTMLElement
-    let desInput = document.getElementById("desInput") as HTMLInputElement
-    let desOrg = document.getElementById("des-org") as HTMLElement
-    let orgInput = document.getElementById("orgInput") as HTMLInputElement
-    let durHead = document.getElementById("durHead") as HTMLElement
-    let durInput = document.getElementById("durInput") as HTMLInputElement
-    let jobAdd = document.getElementById("jobAdd") as HTMLElement
-    let orgAddInput = document.getElementById("orgAddInput") as HTMLInputElement
-    let weJdp = document.getElementById("we-jdp") as HTMLElement
-    let jdInput = document.getElementById("jdInput") as HTMLInputElement
-    let coursePara = document.getElementById("coursePara") as HTMLElement
-    let courseInput = document.getElementById("courseInput") as HTMLInputElement
-    let submitBtn = document.getElementById("submitBtn") as HTMLElement
-    let img = document.getElementById("img") as HTMLImageElement
-
-// Get the file input element and cast it as an HTMLInputElement
-let fileInput = document.getElementById("propic") as HTMLInputElement;
+let img = document.getElementById("img") as HTMLImageElement
+let fileInput = document.getElementById("fileInput") as HTMLInputElement;
 fileInput.onchange = () => {
     if (fileInput.files && fileInput.files[0]) {
         let file = fileInput.files[0];
@@ -72,49 +16,124 @@ fileInput.onchange = () => {
     }
 };
 
+let generatePDF = document.getElementById("generatePDF") as HTMLElement;
+let mainDiv = document.getElementById("mainDiv") as HTMLElement;
+let skillBtn = document.getElementById("skillBtn") as HTMLElement;
+let eduBtn = document.getElementById("eduBtn") as HTMLElement;
+let langBtn = document.getElementById("langBtn") as HTMLElement;
+let wExpBtn = document.getElementById("wExpBtn") as HTMLElement;
+let courseBtn = document.getElementById("courseBtn") as HTMLElement;
 
-    submitBtn.addEventListener("click", () => {
-        paraSkills.innerHTML = formSkill.value;
-        eduPara.innerHTML = formEdu.value;
-        lanPara.innerHTML = lanInput.value;
-        nameHeading.innerHTML = nameInput.value;
-        desHeading.innerHTML = ndoDesInput.value;
-        objPara.innerHTML = formObj.value;
-        email.innerHTML = formEmail.value;
-        cNumber.innerHTML = formNumber.value;
-        address.innerHTML = addInput.value;
-        facebook.href = fbInput.value;
-        linkedin.href = ldInput.value;
-        gHub.href = ghInput.value;
-        iGram.href = instaInput.value;
-        desWe.innerHTML = desInput.value;
-        desOrg.innerHTML = orgInput.value;
-        durHead.innerHTML = durInput.value;
-        jobAdd.innerHTML = orgAddInput.value;
-        weJdp.innerHTML = jdInput.value;
-        coursePara.innerHTML = courseInput.value;
+skillBtn.addEventListener("click", () => {
+  let skillInputDiv = document.getElementById("skillInputDiv") as HTMLElement;
+  let inputElement = document.createElement("input");
+  inputElement.type = "text";
+  inputElement.size = 50;
+  inputElement.id = "skill";
+  inputElement.placeholder = "Enter skill....";
+  skillInputDiv.insertBefore(inputElement, skillBtn);
+});
+eduBtn.addEventListener("click", () => {
+  let eduInputDiv = document.getElementById("eduInputDiv") as HTMLElement;
+  let inputElementEdu = document.createElement("input");
+  inputElementEdu.type = "text";
+  inputElementEdu.size = 50;
+  inputElementEdu.id = "edu";
+  inputElementEdu.placeholder = "Enter education....";
+  eduInputDiv.insertBefore(inputElementEdu, eduBtn);
+});
+langBtn.addEventListener("click", () => {
+    let langInputDiv = document.getElementById("langInputDiv") as HTMLElement;
+  let inputElementEdu = document.createElement("input");
+  inputElementEdu.type = "text";
+  inputElementEdu.size = 50;
+  inputElementEdu.id = "lang";
+  inputElementEdu.placeholder = "Enter Language....";
+  langInputDiv.insertBefore(inputElementEdu, langBtn);
+});
+// wExpBtn.addEventListener("click", () => {
+//     let wExp = document.getElementById("wExp") as HTMLElement;
+//     let inputElementOne = document.createElement("input");
+//     inputElementOne.type = "text"
+//     inputElementOne.className = "wEXPDes"
+//     inputElementOne.placeholder = "Designation....."
+//     wExp.insertBefore(inputElementOne, wExpBtn);
+//     let inputElementTwo = document.createElement("input");
+//     inputElementTwo.type = "text"
+//     inputElementTwo.className = "wEXPOrg"
+//     inputElementTwo.placeholder = "Organization....."
+//     wExp.insertBefore(inputElementTwo, wExpBtn);
+//     let wExpPeriod = document.createElement("div");
+//     let inputElementThree = document.createElement("input");
+//     inputElementThree.type = "text"
+//     inputElementThree.className = "wEXPDur"
+//     inputElementThree.placeholder = "Druation....."
+//     wExpPeriod.insertBefore(inputElementThree, wExpBtn);
+//     let inputElementFour = document.createElement("input");
+//     inputElementFour.type = "text"
+//     inputElementFour.className = "wEXPAdd"
+//     inputElementFour.placeholder = "Address....."
+//     wExpPeriod.insertBefore(inputElementFour, wExpBtn);
+//     wExp.insertBefore(wExpPeriod, wExpBtn);
+//     let inputElementFive = document.createElement("textarea");
+//     inputElementFive.className = "jobDes"
+//     inputElementFive.placeholder = "Enter Job Descriptions....."
+//     wExp.insertBefore(inputElementFive, wExpBtn);   
+// });
 
-        mainDiv.style.display = "flex";
-        generateResume.style.display = "none";
-        generatePDF.style.display = "flex";
-        form.style.display = "none";
-        subBtn.style.display = "none";
-})
-    
-    //  PDF FUNCTION
 
-    window.onload = function () {
-        if (generatePDF) {
-            generatePDF.addEventListener("click", () => {
-                if (mainDiv) {
-                    console.log(mainDiv.innerHTML);
-                    html2pdf().from(mainDiv).save();
-                } else {
-                    console.log("mainDiv element not found.");
-                }
-            });
-        } else {
-            console.log("generatePDF element not found.");
-        }
-    };
-    
+wExpBtn.addEventListener("click", () => {
+    let wExp = document.getElementById("wExp") as HTMLElement;
+
+    // Create a container div to hold the new elements
+    let newEntryDiv = document.createElement("div");
+    newEntryDiv.className = "wExpDiv"
+
+    // Set the inner HTML of the new div to your desired structure
+    newEntryDiv.innerHTML = `
+        <input type="text" class="wEXPDes" placeholder="Designation.....">
+        <input type="text" class="wEXPOrg" placeholder="Organization Name....">
+        <div class="wExpPeriod">
+            <input type="text" class="wEXPDur" placeholder="Duration of Job.....">
+            <input type="text" class="wEXPAdd" placeholder="Address of Organization...">
+        </div>
+        <label for="jobDes">Job Description</label>
+        <textarea type="text" class="jobDes" placeholder="Enter Job Desciption....."></textarea>
+    `;
+
+    // Insert the new entry div before the Add button
+    wExp.insertBefore(newEntryDiv, wExpBtn);
+});
+
+
+
+courseBtn.addEventListener("click", () => {
+    let courses = document.getElementById("courses") as HTMLElement;
+    let inputElementEdu = document.createElement("input");
+    inputElementEdu.type = "text";
+    inputElementEdu.size = 50;
+    inputElementEdu.id = "course";
+    inputElementEdu.className = "course"
+    inputElementEdu.placeholder = "Enter Course Detail....";
+    courses.insertBefore(inputElementEdu, courseBtn);
+});
+
+window.onload = function () {
+  if (generatePDF) {
+    generatePDF.addEventListener("click", () => {
+      if (mainDiv) {
+        skillBtn.style.display = "none";
+        eduBtn.style.display = "none";
+        langBtn.style.display = "none";
+        wExpBtn.style.display = "none";
+        courseBtn.style.display = "none";
+        console.log(mainDiv.innerHTML);
+        html2pdf().from(mainDiv).save();
+      } else {
+        console.log("mainDiv element not found.");
+      }
+    });
+  } else {
+    console.log("generatePDF element not found.");
+  }
+};

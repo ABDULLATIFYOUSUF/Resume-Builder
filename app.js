@@ -1,56 +1,5 @@
-var mainDiv = document.getElementById("mainDiv");
-var generateResume = document.getElementById("generateResume");
-var form = document.getElementById("form");
-var subBtn = document.getElementById("subBtn");
-var generatePDF = document.getElementById("generatePDF");
-generateResume === null || generateResume === void 0 ? void 0 : generateResume.addEventListener("click", function () {
-    mainDiv.style.display = "none";
-    generateResume.style.display = "none";
-    form.style.display = "flex";
-    subBtn.style.display = "flex";
-});
-var formSkill = document.getElementById("formSkill");
-var paraSkills = document.getElementById("paraSkills");
-var formEdu = document.getElementById("formEdu");
-var eduPara = document.getElementById("eduPara");
-var lanInput = document.getElementById("lanInput");
-var lanPara = document.getElementById("lanPara");
-var nameHeading = document.getElementById("nameHeading");
-var nameInput = document.getElementById("nameInput");
-var desHeading = document.getElementById("desHeading");
-var ndoDesInput = document.getElementById("ndoDesInput");
-var formObj = document.getElementById("formObj");
-var objPara = document.getElementById("objPara");
-var email = document.getElementById("email");
-var formEmail = document.getElementById("formEmail");
-var cNumber = document.getElementById("cNumber");
-var formNumber = document.getElementById("formNumber");
-var address = document.getElementById("address");
-var addInput = document.getElementById("addInput");
-var facebook = document.getElementById("facebook");
-var fbInput = document.getElementById("fbInput");
-var linkedin = document.getElementById("linkedin");
-var ldInput = document.getElementById("ldInput");
-var gHub = document.getElementById("gHub");
-var ghInput = document.getElementById("ghInput");
-var iGram = document.getElementById("iGram");
-var instaInput = document.getElementById("instaInput");
-var desWe = document.getElementById("des-we");
-var desInput = document.getElementById("desInput");
-var desOrg = document.getElementById("des-org");
-var orgInput = document.getElementById("orgInput");
-var durHead = document.getElementById("durHead");
-var durInput = document.getElementById("durInput");
-var jobAdd = document.getElementById("jobAdd");
-var orgAddInput = document.getElementById("orgAddInput");
-var weJdp = document.getElementById("we-jdp");
-var jdInput = document.getElementById("jdInput");
-var coursePara = document.getElementById("coursePara");
-var courseInput = document.getElementById("courseInput");
-var submitBtn = document.getElementById("submitBtn");
 var img = document.getElementById("img");
-// Get the file input element and cast it as an HTMLInputElement
-var fileInput = document.getElementById("propic");
+var fileInput = document.getElementById("fileInput");
 fileInput.onchange = function () {
     if (fileInput.files && fileInput.files[0]) {
         var file = fileInput.files[0];
@@ -64,37 +13,98 @@ fileInput.onchange = function () {
         reader_1.readAsDataURL(file);
     }
 };
-submitBtn.addEventListener("click", function () {
-    paraSkills.innerHTML = formSkill.value;
-    eduPara.innerHTML = formEdu.value;
-    lanPara.innerHTML = lanInput.value;
-    nameHeading.innerHTML = nameInput.value;
-    desHeading.innerHTML = ndoDesInput.value;
-    objPara.innerHTML = formObj.value;
-    email.innerHTML = formEmail.value;
-    cNumber.innerHTML = formNumber.value;
-    address.innerHTML = addInput.value;
-    facebook.href = fbInput.value;
-    linkedin.href = ldInput.value;
-    gHub.href = ghInput.value;
-    iGram.href = instaInput.value;
-    desWe.innerHTML = desInput.value;
-    desOrg.innerHTML = orgInput.value;
-    durHead.innerHTML = durInput.value;
-    jobAdd.innerHTML = orgAddInput.value;
-    weJdp.innerHTML = jdInput.value;
-    coursePara.innerHTML = courseInput.value;
-    mainDiv.style.display = "flex";
-    generateResume.style.display = "none";
-    generatePDF.style.display = "flex";
-    form.style.display = "none";
-    subBtn.style.display = "none";
+var generatePDF = document.getElementById("generatePDF");
+var mainDiv = document.getElementById("mainDiv");
+var skillBtn = document.getElementById("skillBtn");
+var eduBtn = document.getElementById("eduBtn");
+var langBtn = document.getElementById("langBtn");
+var wExpBtn = document.getElementById("wExpBtn");
+var courseBtn = document.getElementById("courseBtn");
+skillBtn.addEventListener("click", function () {
+    var skillInputDiv = document.getElementById("skillInputDiv");
+    var inputElement = document.createElement("input");
+    inputElement.type = "text";
+    inputElement.size = 50;
+    inputElement.id = "skill";
+    inputElement.placeholder = "Enter skill....";
+    skillInputDiv.insertBefore(inputElement, skillBtn);
 });
-//  PDF FUNCTION
+eduBtn.addEventListener("click", function () {
+    var eduInputDiv = document.getElementById("eduInputDiv");
+    var inputElementEdu = document.createElement("input");
+    inputElementEdu.type = "text";
+    inputElementEdu.size = 50;
+    inputElementEdu.id = "edu";
+    inputElementEdu.placeholder = "Enter education....";
+    eduInputDiv.insertBefore(inputElementEdu, eduBtn);
+});
+langBtn.addEventListener("click", function () {
+    var langInputDiv = document.getElementById("langInputDiv");
+    var inputElementEdu = document.createElement("input");
+    inputElementEdu.type = "text";
+    inputElementEdu.size = 50;
+    inputElementEdu.id = "lang";
+    inputElementEdu.placeholder = "Enter Language....";
+    langInputDiv.insertBefore(inputElementEdu, langBtn);
+});
+// wExpBtn.addEventListener("click", () => {
+//     let wExp = document.getElementById("wExp") as HTMLElement;
+//     let inputElementOne = document.createElement("input");
+//     inputElementOne.type = "text"
+//     inputElementOne.className = "wEXPDes"
+//     inputElementOne.placeholder = "Designation....."
+//     wExp.insertBefore(inputElementOne, wExpBtn);
+//     let inputElementTwo = document.createElement("input");
+//     inputElementTwo.type = "text"
+//     inputElementTwo.className = "wEXPOrg"
+//     inputElementTwo.placeholder = "Organization....."
+//     wExp.insertBefore(inputElementTwo, wExpBtn);
+//     let wExpPeriod = document.createElement("div");
+//     let inputElementThree = document.createElement("input");
+//     inputElementThree.type = "text"
+//     inputElementThree.className = "wEXPDur"
+//     inputElementThree.placeholder = "Druation....."
+//     wExpPeriod.insertBefore(inputElementThree, wExpBtn);
+//     let inputElementFour = document.createElement("input");
+//     inputElementFour.type = "text"
+//     inputElementFour.className = "wEXPAdd"
+//     inputElementFour.placeholder = "Address....."
+//     wExpPeriod.insertBefore(inputElementFour, wExpBtn);
+//     wExp.insertBefore(wExpPeriod, wExpBtn);
+//     let inputElementFive = document.createElement("textarea");
+//     inputElementFive.className = "jobDes"
+//     inputElementFive.placeholder = "Enter Job Descriptions....."
+//     wExp.insertBefore(inputElementFive, wExpBtn);   
+// });
+wExpBtn.addEventListener("click", function () {
+    var wExp = document.getElementById("wExp");
+    // Create a container div to hold the new elements
+    var newEntryDiv = document.createElement("div");
+    newEntryDiv.className = "wExpDiv";
+    // Set the inner HTML of the new div to your desired structure
+    newEntryDiv.innerHTML = "\n        <input type=\"text\" class=\"wEXPDes\" placeholder=\"Designation.....\">\n        <input type=\"text\" class=\"wEXPOrg\" placeholder=\"Organization Name....\">\n        <div class=\"wExpPeriod\">\n            <input type=\"text\" class=\"wEXPDur\" placeholder=\"Duration of Job.....\">\n            <input type=\"text\" class=\"wEXPAdd\" placeholder=\"Address of Organization...\">\n        </div>\n        <label for=\"jobDes\">Job Description</label>\n        <textarea type=\"text\" class=\"jobDes\" placeholder=\"Enter Job Desciption.....\"></textarea>\n    ";
+    // Insert the new entry div before the Add button
+    wExp.insertBefore(newEntryDiv, wExpBtn);
+});
+courseBtn.addEventListener("click", function () {
+    var courses = document.getElementById("courses");
+    var inputElementEdu = document.createElement("input");
+    inputElementEdu.type = "text";
+    inputElementEdu.size = 50;
+    inputElementEdu.id = "course";
+    inputElementEdu.className = "course";
+    inputElementEdu.placeholder = "Enter Course Detail....";
+    courses.insertBefore(inputElementEdu, courseBtn);
+});
 window.onload = function () {
     if (generatePDF) {
         generatePDF.addEventListener("click", function () {
             if (mainDiv) {
+                skillBtn.style.display = "none";
+                eduBtn.style.display = "none";
+                langBtn.style.display = "none";
+                wExpBtn.style.display = "none";
+                courseBtn.style.display = "none";
                 console.log(mainDiv.innerHTML);
                 html2pdf().from(mainDiv).save();
             }

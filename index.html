@@ -1,236 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-  </head>
-  <body>
-    <div id="mainDiv" class="mainDiv">
-      <!-- first div -->
-      <div class="fDiv">
-        <!--Resume Image -->
-        <img id="img" class="img" src="./images/latif (2).jpg" />
+</head>
+<body>
 
-        <!-- Skills -->
-        <div class="skills">
-          <i class="fa-duotone fa-solid fa-laptop-code"> </i>
-          <h2>Skills</h2>
-        </div>
-        <div class="paraSkillsDiv">
-          <p id="paraSkills" class="paraSkills">HTML</p>
-          <p id="paraSkills" class="paraSkills">CSS</p>
-          <p id="paraSkills" class="paraSkills">TypeScript</p>
-          <p id="paraSkills" class="paraSkills">javaScript</p>
-        </div>
 
-        <!-- Education -->
-        <div class="eduDiv">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <h2>Education</h2>
-        </div>
-        <div class="eduDetail">
-          <p id="eduPara" class="eduPara">
-            B.Com (Continue) from Allama Iqbal Open University
-          </p>
-          <p id="eduPara" class="eduPara">
-            Intermediate from Intermediate Board of Karachi.
-          </p>
-          <p id="eduPara" class="eduPara">
-          Matriculation from Matriculation Board of Karachi.
-          </p>
-        </div>
+    <div class="mainDiv" id="mainDiv">
+<div class="firstDiv">
 
-        <!-- Languages -->
-        <div class="lanDiv">
-          <i class="fa-solid fa-language"></i>
-          <h2>Languages</h2>
-        </div>
-        <div class="lanDetail">
-          <p id="lanPara" class="lanPara">English</p>
-          <p class="lanPara">Urdu</p>
-        </div>
-      </div>
+<div class="pImage">
+    <img id="img" src="./images/latif (2).jpg" alt="" />
+      <label for="fileInput"><i class="fa-solid fa-camera"></i></label>
+      <input class="fileInput" type="file" id="fileInput" />   
+</div>
 
-      <!-- Second Div -->
-      <div class="sDiv">
-        <!-- first portion name, designation, objective -->
-        <h1 id="nameHeading" class="nameHeading">Abdul Latif</h1>
-        <h3 id="desHeading" class="desheading">front-end developer</h3>
-        <p id="objPara" class="objPara">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-          consectetur necessitatibus laborum quidem repellat qui eos rerum
-          molestiae dolor? Fugiat facilis deleniti voluptatibus, praesentium
-          reiciendis suscipit dolorum neque maxime corrupti consectetur
-          adipisicing elit. Sunt consectetur necessitatibus laborum quidem
-          repellat qui eos rerum molestiae dolor? Fugiat facilis deleniti
-          voluptatibus, praesentium reiciendis suscipit dolorum neque maxime
-          corrupti.
-        </p>
+<div class="skills">
+    <h1>Skills</h1>
+   <div class="skillInputDiv" id="skillInputDiv">
+    <input input size="50" type="text" id="skill" placeholder="Enter Your Skills...." value="HTML">
+    <button id="skillBtn">Add</button>
+   </div> 
+</div>
 
-        <div class="address">
-          <div class="addparamain">
-            <div class="addpara">
-              <i class="fa-solid fa-envelope"></i>
-              <p id="email">latifyousuf513@gmail.com</p>
-            </div>
-            <div class="addpara">
-              <i class="fa-solid fa-phone"></i>
-              <p id="cNumber">+923002288944</p>
-            </div>
-          </div>
-          <div class="addparamain">
-            <div class="addpara">
-              <i class="fa-solid fa-location-dot"></i>
-              <p id="address">Karachi, Sindh, Pakistan.</p>
-            </div>
-            <div class="addpara">
-              <a id="facebook" target="_blank" href="https://www.facebook.com/latif.memon.50"><i class="fa-brands fa-facebook"></i></a>
-              <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/abdul-latif-531428263/"><i class="fa-brands fa-linkedin"></i></a>
-              <a id="gHub" target="_blank" href="https://github.com/ABDULLATIFYOUSUF"><i class="fa-brands fa-github"></i></a>
-              <a id="iGram" target="_blank" href="https://www.instagram.com/latifyousuf/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
+<div class="eduDetails">
+    <h1>Education</h1>
+    <div id="eduInputDiv" class="eduInputDiv">
+        <input size="50" type="text" id="edu" placeholder="Enter about your education...." value="B.com (continue) from Allama Iqbal Open University">
+        <button id="eduBtn">Add</button>
+    </div>
+</div>
 
+<div class="languages">
+    <h1>Languages</h1>
+    <div class="langInputDiv" id="langInputDiv">
+        <input input size="50" type="text" id="lang" placeholder="Enter Your Language..." value="Urdu">
+        <button id="langBtn">Add</button>
+    </div>
+</div>
+
+</div>
+
+<div class="secondDiv">
+<div class="namedesobj">
+    <input size="50" type="text" class="pName" id="pName" value="Abdul Latif">
+    <input size="50" type="text" class="pDes" id="pDes" value="Front-end Developer">
+    <label for="pObj">Objectives:</label>
+    <textarea type="text" class="pObj" id="pObj">Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam unde, sunt labore asperiores consequuntur. Cupiditate quam natus ullam excepturi eos nisi, id laborum sint ex, dolorum reprehenderit! Consectetur, laborum!Vero modi sint distinctio, consectetur quia sequi dolor consequatur autem ullam molestias asperiores, earum officia a nostrum eveniet inventore voluptatibus atque, amet ad corrupti repellendus? Culpa corporis id ratione est!</textarea>
+</div>
+
+<div class="address">
+    <div class="addOne">
         <div>
-          <div class="we">
-            <i class="fa-solid fa-briefcase"></i>
-            <h2 id="weHead">WORK EXPERIENCE</h2>
-          </div>
-          <h3 id="des-we" class="des-we">Junior Clerk</h3>
-          <h4 id="des-org" class="des-org">Karachi Development Authority</h4>
-          <div class="des-dur">
-            <h5 id="durHead">03/01/2012 to Present</h5>
-            <h5 id="jobAdd">Karachi, Pakistan</h5>
-          </div>
-          <h5 id="we-jd" class="we-jd">Job Description:</h5>
-          <p id="we-jdp" class="we-jdp">
-            As a Junior Clerk in a government organization, I was responsible
-            for performing various clerical tasks including data entry, managing
-            office records, and handling routine correspondence. My duties also
-            involved assisting senior staff with administrative tasks,
-            maintaining filing systems, and ensuring smooth daily operations by
-            coordinating with different departments. I consistently adhered to
-            organizational procedures and policies, contributing to the overall
-            efficiency of the office.
-          </p>
+            <label for="email">Email:</label>
+            <input size="20" type="email" id="email" value="latifyousuf513@gmail.com">
         </div>
-
         <div>
-          <div class="courses">
-            <i class="fa-sharp fa-solid fa-certificate"></i>
-            <h2 id="courseHead">COURSES</h2>
-          </div>
-          <div>
-            <p id="coursePara" class="course-para">
-              Currently pursuing a Generative AI course from GIAIC.
-            </p>
-            <p class="course-para">
-              Completed a Web Development course from SMIT.
-            </p>
-            <p class="course-para">
-              Completed a Computer and Manual Accounting course
-            </p>
-          </div>
+            <label for="cNum">Contact No:</label>
+            <input size="20" type="text" id="cNum" value="+923002288944">
         </div>
-      </div>
+    </div>
+</div>
+
+<div id="wExp" class="wExp">
+    <div class="wExpHead">
+        <i class="fa-solid fa-briefcase"></i>
+        <h1>Work Experiance</h1>
     </div>
 
-    <div class="gBtn">
-        <button id="generateResume">Generate Your Resume</button>
+<div class="wExpDiv">
+
+    <input type="text" class="wEXPDes" id="wEXPDes" value="Junior Clerk">
+    <input type="text" class="wEXPOrg" id="wEXPOrg" value="Karachi Development Authority">
+    <div class="wExpPeriod">
+        <input type="text" class="wEXPDur" id="wEXPDur" value="12/03/2012 to Present">
+        <input type="text" class="wEXPAdd" id="wEXPAdd" value="Karachi, Pakistan">
     </div>
+    <label for="jobDes">Job Description</label>
+    <textarea type="text" class="jobDes" id="jobDes">As a Junior Clerk in a government organization, I was responsible for performing various clerical tasks including data entry, managing office records, and handling routine correspondence. My duties also involved assisting senior staff with administrative tasks, maintaining filing systems, and ensuring smooth daily operations by coordinating with different departments. I consistently adhered to organizational procedures and policies, contributing to the overall efficiency of the office.</textarea>
+</div>
+    
 
 
-    <div id="form" class="form">
-        <div class="formFirst">
-            <div class="propic">
-                <h3>Profile Picture:</h3>
-                <label for="">Select Your Photo:</label>
-                <input id="propic" type="file">
-            </div>
-            <div class="formSkills">
-                <h3>Education Information:</h3>
-                <label for="">Skills:</label>
-                <input id="formSkill" type="text" placeholder="Enter Your Skill.....">
-                <button>Add</button>
-            </div>
 
-            <div class="formEdu">
-                <label for="">Education:</label>
-                <input id="formEdu" type="text" placeholder="Enter Your Education.....">
-                <button>Add</button>
-            </div>
-
-            <div class="formLan">
-                <label for="">Languages:</label>
-                <input id="lanInput" type="text" placeholder="Enter languages.....">
-                <button>Add</button>
-            </div>
+    <button class="wExpBtn" id="wExpBtn">Add</button>
 </div>
 
-<div class="formSecond">
-
-    <div class="ndo">
-        <h3>Personal Information</h3>
-        <label for="">Name:</label>
-        <input id="nameInput" type="text" placeholder="Enter Your Name...">
-        <label for="">Designation:</label>
-        <input id="ndoDesInput" type="text" placeholder="Enter Your Designation...">
-        <label for="">Objective:</label>
-        <textarea name="" id="formObj" placeholder="Enter Objective...."></textarea>
-</div>
-
-<div class="perInfo">
-    <h3>Contact Information:</h3>
-    <label for="">Email:</label>
-    <input id="formEmail" type="email" placeholder="Enter Your Email....">
-    <label for="">Contact Number:</label>
-    <input id="formNumber" type="text" placeholder="Enter Your Contact Number...">
-    <label for="">Address:</label>
-    <input id="addInput" type="text" placeholder="Enter Your Address...">
-    <label for="">Social Media Links</label>
-    <input id="fbInput" type="text" placeholder="Enter Your Facebook Link....">
-    <input id="ldInput" type="text" placeholder="Enter Your Linkedin Link....">
-    <input id="ghInput" type="text" placeholder="Enter Your github Link....">
-    <input id="instaInput" type="text" placeholder="Enter Your instagram Link....">
-</div>
-
-<div class="form-we">
-    <h3>Work Experience:</h3>
-    <label for="">Designation:</label>
-    <input id="desInput" type="text" placeholder="Enter Designation....">
-    <label for="">organization Name:</label>
-    <input id="orgInput" type="text" placeholder="Enter organization Name....">
-    <label for="">Duration of Job:</label>
-    <input id="durInput" type="text" placeholder="03/12/2024 to present....">
-    <label for="">Organization Address:</label>
-    <input id="orgAddInput" type="text" placeholder="Enter Address of Organization....">
-    <label for="">Job Description:</label>
-    <input id="jdInput" type="text" placeholder="Enter Your Job Description.....">
-    <button>Add</button>
-</div>
-
-<div class="form-course">
-    <label for="">Courses</label>
-    <input id="courseInput" type="text" placeholder="Enter your course detail....">
-    <button>Add</button>
-</div>
-</div>
+<div id="courses" class="courses">
+    <div class="courseHead">
+        <i class="fa-solid fa-certificate"></i>
+        <h1>Courses</h1>
     </div>
-    <div class="SubBtn" id="subBtn">
-        <button id="submitBtn">Submit</button>
-    </div>
-
-<div class="generatePDF">
-  <button id="generatePDF">Download PDF</button>
+    <input size="50" type="text" id="course" class="course" value="Completed Accounting Course from IBM">
+<button class="courseBtn" id="courseBtn">Add</button>
 </div>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-  <script src="app.js"></script>
+</div>
+</div>
+
+<div class="mainBtnDiv">
+    <button class="generatePDF" id="generatePDF">Download PDF</button>
+</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+<script src="app.js"></script>
 </html>

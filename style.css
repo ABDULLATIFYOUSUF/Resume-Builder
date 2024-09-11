@@ -2,473 +2,277 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .mainDiv {
     display: flex;
-    justify-content: center;
     width: 100%;
+    margin: 10px;
     height: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 10px auto;
+    gap: 10px;
 }
-
-.fDiv {
+.firstDiv {
     width: 30%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(90, 90, 165);
-    border-radius: 5px;
-    padding: 30px;
-}
-
-.img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    box-shadow: rgb(3, 245, 245) 0px 3px 8px;
-    margin-bottom: 50px;
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: rgb(223, 216, 216);
-}
-
-.paraSkillsDiv {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 2px;
-}
-
-.paraSkills {
-    width: 100%;
-    padding: 8px;
-    background-color: rgb(235, 242, 245);
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.eduDiv {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: rgb(223, 216, 216);
-    font-size: larger;
-}
-
-.eduDetail {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.eduPara {
-    color: rgb(223, 216, 216);
-}
-
-.lanDiv {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: rgb(223, 216, 216);
-    font-size: larger;
-}
-
-.lanDetail {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.lanPara {
-    color: rgb(223, 216, 216);
-}
-
-
-.sDiv {
-    width: 70%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding: 30px;
-}
-
-.nameHeading {
-    color: rgb(87, 76, 76);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
-}
-
-.desheading {
-    color: rgb(37, 37, 165);
-    font-size: 1.5em;
-}
-
-.objPara {
-    color: rgb(87, 76, 76);
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.address {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(90, 90, 165);
+    background-color: rgb(217, 198, 235);
     padding: 10px;
-    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.pImage label{
+    margin-left: -60px;
+    margin-top: -40px;
+    z-index: 10;
+}
+.pImage label i{
+    font-size: 2em;    
+}
+.pImage .fileInput{
+    display: none;
+}
+.skills{
+    margin-top: 20px;
+}
+.skills h1{
+    color: azure;
+}
+.skills input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: bisque;
     border-radius: 5px;
-    color: rgb(223, 216, 216);
-    gap: 20px;
+}
+.skills button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+}
+.eduDetails{
+    margin-top: 20px;
+}
+.eduDetails h1{
+    color: azure;
+}
+.eduDetails input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.eduDetails button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+}
+.languages{
+    margin-top: 20px;
+}
+.languages h1{
+    color: azure;
+}
+.languages input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.languages button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+}
+.skillInputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.eduInputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.langInputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.addparamain {
+/* ..................................................Second Div...................................................... */
+.secondDiv {
+    width: 70%;
+    padding-right: 40px;
+}
+.namedesobj{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.pName{
+    border: none;
+    font-size: 2.5em;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+.pDes{
+    border: none;
+    padding: 10px;
+    font-size: 2em;
+    color: rgb(217, 198, 235);
+}
+.namedesobj label{
+    font-size: 2em;
+    padding-left: 10px;
+}
+.pObj{
+    padding-left: 10px;
+    font-size: 1em;
+    border: none;
+    height: 130px;
+    overflow-y: hidden;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.address{
+    width: 100%;
+    background-color: rgb(217, 198, 235);
+    padding: 10px;
+    margin: 10px;
+}
+.addOne{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-
-.addpara {
+.addOne label{
+    font-size: 1em;
+}
+.addOne input{
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+}
+.wExp{
     display: flex;
-    gap: 10px;
+    flex-direction: column;
 }
-
-.fa-brands {
-    font-size: 20px;
-    color: rgb(223, 216, 216);
-    cursor: pointer;
-    margin: 5px;
-}
-
-.we {
+.wExpHead{
+    padding: 10px;
     display: flex;
-    gap: 10px;
     align-items: center;
-    color: rgb(87, 76, 76);
-    margin-bottom: 20px;
+    gap: 10px;
 }
-
-.we i {
-    font-size: large;
+.wExpHead i{
+    font-size: 2em;
 }
-
-.des-we {
-    color: rgb(87, 76, 76);
+.wExpHead h1{
+    font-size: 2em;
 }
-
-.des-org {
-    color: rgb(87, 76, 76);
-}
-
-.des-dur {
-    color: rgb(90, 90, 165);
-    margin-top: 20px;
+.wExpDiv{
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-
-.we-jd {
-    color: rgb(90, 90, 165);
+.wEXPDes{
+    padding: 10px 10px 0px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.wEXPOrg{
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+.wEXPDur{
+    padding: 10px;
+    border: none;
+    color: rgb(169, 99, 235);
+}
+.wEXPAdd{
+    padding: 10px;
+    border: none;
+    color: rgb(169, 99, 235);
+}
+.wExp label{
+    font-size: 1.5em;
+    padding-left: 10px;
     margin-top: 10px;
+    font-weight: bold;
 }
-
-.we-jdp {
+.wExpBtn{
+    padding: 10px;
+    background-color: blue;
+    width: 100px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    color: azure;   
+}
+.jobDes{
+    padding-left: 10px;
+    font-size: 1em;
+    border: none;
+    height: 130px;
+    overflow-y: hidden;
     text-align: justify;
-    margin-top: 5px;
-    color: rgb(87, 76, 76);
+    font-family: 'Times New Roman', Times, serif;
 }
-
-.courses {
+.courses{
+    display: flex;
+    flex-direction: column;
+}
+.courseHead{
+    padding: 10px;
     display: flex;
     align-items: center;
-    color: rgb(87, 76, 76);
     gap: 10px;
-    margin: 20px 0px;
 }
-
-.courses i {
-    font-size: large;
-
+.courseHead i{
+    font-size: 2em;
 }
-
-.course-para {
-    color: rgb(87, 76, 76);
+.courseHead h1{
+    font-size: 2em;
 }
-
-.gBtn{
+.course{
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+}
+.courseBtn{
+    padding: 10px;
+    background-color: blue;
+    margin: 10px auto;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+}
+.mainBtnDiv{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.gBtn button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin-bottom: 50px;
     margin-top: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.form{
-    display: none;
-    width: 100%;
-    border: 2px solid rgb(90, 90, 165);
-    height: fit-content;
-    padding: 20px;
-}
-.formFirst{
-    width: 50%;
-    border: 1px solid black;
-}
-.propic{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.propic label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.propic input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-    border: 2px solid rgb(87, 76, 76);
-}
-.formSkills{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.formSkills label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.formSkills input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.formSkills button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    width: fit-content;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.formEdu{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.formEdu label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.formEdu input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.formEdu button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    width: fit-content;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.formLan{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.formLan label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.formLan input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.formLan button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    width: fit-content;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.formSecond{
-    width: 50%;
-    border: 1px solid black;
-
-}
-.ndo{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.ndo label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.ndo input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.ndo textarea{
-    border-radius: 5px;
-    width: 80%;
-    height: 10em;
-    padding: 10px;
-}
-
-.perInfo{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-}
-.perInfo label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.perInfo input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.form-we{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-}
-.form-we label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.form-we input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.form-we button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    width: fit-content;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-
-.form-course{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-}
-.form-course label{
-    font-weight: bold;
-    margin: 10px 0px;
-}
-.form-course input{
-    border-radius: 5px;
-    width: 80%;
-    padding: 10px;
-}
-.form-course button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    width: fit-content;
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.SubBtn{
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.SubBtn button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    font-weight: bold;
-    cursor: pointer;
 }
 .generatePDF{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.generatePDF button{
-    background-color: rgb(90, 90, 165);
-    color: rgb(235, 242, 245);
     padding: 10px;
+    background-color: blue;
+    width: 150px;
     border: none;
-    outline: none;
-    border-radius: 8px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    display: none;
+    border-radius: 5px;
+    color: azure;
 }
